@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>말로 만드는 세상, 바이브 코딩 (Vibe Coding)</title>
+  <!-- Google Fonts & Pretendard CDN for Modern Editorial Theme -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Montserrat:wght@600;700;800;900&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="presentation-wrapper">
+    <!-- 상단 헤더 및 진행 바 -->
+    <header class="pres-header">
+      <div class="logo-area">
+        <span class="logo-title">말로 만드는 세상, 바이브 코딩</span>
+      </div>
+      <div class="header-controls">
+        <span class="slide-counter"><strong id="current-num">1</strong> / 5</span>
+        <button id="notes-btn" class="icon-btn" title="발표자 노트 팝업 (S 키)">🎙️</button>
+        <button id="fullscreen-btn" class="icon-btn" title="전체화면 전환 (F 키)">⛶</button>
+      </div>
+    </header>
+
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- 메인 슬라이더 컨테이너 -->
+    <main class="slider-container" id="slider-container">
+      <div class="slides-track" id="slides-track">
+        
+        <!-- 슬라이드 1: 표지 및 개념 정의 -->
+        <section class="slide active" data-slide="1" data-notes="[슬라이드 1: 개념 이해]&#10;바이브 코딩의 개념을 소개하는 첫 번째 슬라이드입니다.&#10;- 프로그래밍 문법을 몰라도 평소 쓰는 말(자연어)과 느낌(Vibe)으로 AI에게 주문하여 프로그램을 완성하는 패러다임의 전환입니다.&#10;- '식당 주방과 손님' 비유: 주방에서 직접 땀 흘리던 개발에서, 식탁에 앉아 주문서만 전달하는 편리한 방식으로 진화했습니다.">
+          <div class="slide-content">
+            <div class="text-col">
+              <span class="tag tag-coral">SLIDE 01 · 개념 이해</span>
+              <h1 class="slide-title">말로 만드는 세상,<br><span class="highlight">바이브 코딩</span>(Vibe Coding)</h1>
+              <p class="slide-subtitle">코딩을 몰라도 머릿속 상상을 현실로 만드는 시대</p>
+
+              <div class="card concept-card">
+                <h3>💡 바이브 코딩이란?</h3>
+                <p>어려운 프로그래밍 영어 문법 대신, <strong>평소 쓰는 말(자연어)과 느낌(Vibe)</strong>으로 AI에게 주문하여 프로그램을 완성하는 혁신적인 방식입니다.</p>
+              </div>
+
+              <div class="card metaphor-card">
+                <h3>🍳 일상 비유: '식당 주방과 손님'</h3>
+                <div class="comparison-row">
+                  <div class="comp-box past">
+                    <span class="comp-badge">기존 코딩</span>
+                    <p>내가 직접 주방에서 칼질하고 불 조절하며 땀 흘리는 요리</p>
+                  </div>
+                  <div class="comp-arrow">➔</div>
+                  <div class="comp-box present">
+                    <span class="comp-badge active">바이브 코딩</span>
+                    <p>식탁에 편하게 앉아 요리사(AI)에게 <em>"얼큰한 찌개 끓여줘"</em> 주문하는 요리!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="visual-col">
+              <div class="image-frame">
+                <img src="images/slide1_chef.jpg" alt="식탁에서 로봇 요리사에게 주문하는 사람" class="clay-img">
+                <div class="img-caption">🎨 식당 요리사(AI)에게 주문서만 건네면 끝!</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 슬라이드 2: 탄생 배경과 발전 과정 -->
+        <section class="slide" data-slide="2" data-notes="[슬라이드 2: 탄생과 발전]&#10;바이브 코딩의 탄생 배경과 진화 과정을 설명합니다.&#10;- 2025년 2월, 안드레이 카파시가 '이제 코드를 직접 쓰지 않는다'고 선언하며 대중화되었습니다.&#10;- 자동차의 수동 변속에서 완전 자율주행으로 발전하듯, AI 비서 역시 1단계 단순 단어 추천부터 4단계 총괄 실장(자율 에이전트)으로 성장했습니다.">
+          <div class="slide-content">
+            <div class="text-col">
+              <span class="tag tag-yellow">SLIDE 02 · 탄생과 발전</span>
+              <h2 class="slide-title">언제 시작되었고,<br><span class="highlight">어떻게 진화했을까?</span></h2>
+              <p class="slide-subtitle">2025년 2월 안드레이 카파시의 선언 & 비서의 놀라운 성장</p>
+
+              <div class="card quote-card">
+                <p class="quote-text">"요즘 나는 코드를 직접 쓰지 않는다. 그저 대화하고 느낌(Vibe)대로 만들 뿐이다."</p>
+                <span class="quote-author">— 안드레이 카파시 (전 테슬라 AI 책임자)</span>
+              </div>
+
+              <div class="card timeline-card">
+                <h3>🚗 비서의 4단계 성장기 (수동 운전 ➔ 완전 자율주행)</h3>
+                <ul class="step-list">
+                  <li><strong>1단계 (단어 자동완성):</strong> 스마트폰 키보드처럼 다음 단어 몇 개만 추천</li>
+                  <li><strong>2단계 (챗봇 문답):</strong> 챗GPT에 물어보고 코드를 복사해서 붙여넣기</li>
+                  <li><strong>3단계 (전용 조수):</strong> 컴퓨터 화면 안으로 들어와 서류를 함께 고쳐주기</li>
+                  <li><strong>4단계 (총괄 실장):</strong> <em>"이 앱 만들어놔"</em> 하면 설계부터 완성까지 스스로 끝냄</li>
+                </ul>
+              </div>
+            </div>
+            <div class="visual-col">
+              <div class="image-frame">
+                <img src="images/slide2_car.jpg" alt="자율주행차에서 여유를 즐기는 캐릭터" class="clay-img">
+                <div class="img-caption">🚗 기어 변속(수동 운전)에서 완전 자율주행으로!</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 슬라이드 3: 3단계 실천법 & 추천 도구 -->
+        <section class="slide" data-slide="3" data-notes="[슬라이드 3: 실전 가이드]&#10;누구나 바로 따라 할 수 있는 3단계 실천법과 추천 도구입니다.&#10;- [1단계: 도구 켜기] -> [2단계: 말로 주문하기] -> [3단계: 눈으로 보고 피드백 주기]의 가벼운 사이클을 강조하세요.&#10;- 입문자를 위한 웹 브라우저 도구(Bolt.new, v0)와 심화 프로젝트를 위한 전용 IDE 도구(Cursor, Antigravity)를 소개합니다.">
+          <div class="slide-content">
+            <div class="text-col">
+              <span class="tag tag-mint">SLIDE 03 · 실전 가이드</span>
+              <h2 class="slide-title">어떻게 하고,<br><span class="highlight">어떤 도구를 쓸까?</span></h2>
+              <p class="slide-subtitle">딱 3단계로 완성하는 실천법 & 나에게 맞는 맞춤 도구</p>
+
+              <div class="card steps-card">
+                <h3>🛠️ 초간단 3단계 실천법</h3>
+                <div class="three-steps">
+                  <div class="step-item">
+                    <span class="step-num">1</span>
+                    <strong>도구 켜기</strong>
+                    <p>AI 작업실 열기</p>
+                  </div>
+                  <div class="step-arrow">➔</div>
+                  <div class="step-item">
+                    <span class="step-num">2</span>
+                    <strong>말로 주문하기</strong>
+                    <p>"메모 앱 만들어줘"</p>
+                  </div>
+                  <div class="step-arrow">➔</div>
+                  <div class="step-item">
+                    <span class="step-num">3</span>
+                    <strong>눈으로 보고 피드백</strong>
+                    <p>"글자 좀 키워줘"</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card tools-card">
+                <h3>🧰 나에게 맞는 도구 선택</h3>
+                <div class="tools-grid">
+                  <div class="tool-box">
+                    <span class="tool-badge web">밀키트형 (웹 도구)</span>
+                    <strong>Bolt.new / v0</strong>
+                    <p>설치 없이 브라우저에서 1분 만에 뚝딱!</p>
+                  </div>
+                  <div class="tool-box">
+                    <span class="tool-badge app">전문 주방형 (설치 도구)</span>
+                    <strong>Cursor / Antigravity</strong>
+                    <p>내 컴퓨터에서 완성도 높은 프로젝트 개발</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="visual-col">
+              <div class="image-frame">
+                <img src="images/slide3_tools.jpg" alt="마법의 장난감 상자와 조립 블록" class="clay-img">
+                <div class="img-caption">🧩 블록 장난감 맞추듯 쉬운 3단계 완성</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 슬라이드 4: 무엇을 만들 수 있을까? -->
+        <section class="slide" data-slide="4" data-notes="[슬라이드 4: 활용 사례]&#10;바이브 코딩으로 실제로 만들 수 있는 4가지 대표 제작물입니다.&#10;- 1. 맞춤 생활 도구 (강아지 기록장, 맞춤 가계부)&#10;- 2. 반복 업무 자동화 (엑셀 데이터 일괄 정리, 파일 이름 변경)&#10;- 3. 재미있는 미니 게임 (가족 사진 맞추기, 테트리스)&#10;- 4. 나만의 웹사이트 (포트폴리오, 모바일 초대장)&#10;머릿속 상상을 디지털 3D 프린터처럼 즉시 인쇄해 낼 수 있음을 전합니다.">
+          <div class="slide-content">
+            <div class="text-col">
+              <span class="tag tag-sky">SLIDE 04 · 활용 사례</span>
+              <h2 class="slide-title">바이브 코딩으로<br><span class="highlight">무엇을 만들 수 있을까?</span></h2>
+              <p class="slide-subtitle">머릿속 아이디어를 즉시 출력하는 디지털 3D 프린터</p>
+
+              <div class="creations-grid">
+                <div class="creation-card">
+                  <div class="creation-icon">🐕</div>
+                  <div class="creation-info">
+                    <h4>맞춤 생활 도구</h4>
+                    <p>강아지 산책/식사 기록장, 나만의 가계부, 맞춤 타이머</p>
+                  </div>
+                </div>
+                <div class="creation-card">
+                  <div class="creation-icon">⚡</div>
+                  <div class="creation-info">
+                    <h4>반복 업무 자동화</h4>
+                    <p>뒤죽박죽 엑셀 한 번에 정리, 파일 수백 개 이름 날짜순 변경</p>
+                  </div>
+                </div>
+                <div class="creation-card">
+                  <div class="creation-icon">🎮</div>
+                  <div class="creation-info">
+                    <h4>재미있는 미니 게임</h4>
+                    <p>우리 가족 사진 짝 맞추기, 테트리스, 상식 퀴즈 게임</p>
+                  </div>
+                </div>
+                <div class="creation-card">
+                  <div class="creation-icon">🌐</div>
+                  <div class="creation-info">
+                    <h4>나만의 웹사이트</h4>
+                    <p>내 이력서 포트폴리오, 부모님 가게 소개, 모바일 모임 초대장</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="visual-col">
+              <div class="image-frame">
+                <img src="images/slide4_creations.jpg" alt="귀여운 3D 프린터와 여러 장난감 미니어처" class="clay-img">
+                <div class="img-caption">🖨️ 상상하는 무엇이든 뚝딱 찍어내는 만능 공방</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 슬라이드 5: 초보자를 위한 3대 성공 꿀팁 & 결론 -->
+        <section class="slide" data-slide="5" data-notes="[슬라이드 5: 핵심 요약 및 꿀팁]&#10;초보자가 실패 없이 성공하기 위한 3대 핵심 꿀팁과 마무리 결론입니다.&#10;- TIP 1: 영어가 쏟아져도 코드를 억지로 읽지 마세요.&#10;- TIP 2: 빨간 에러가 나면 그대로 복사해서 AI에게 '고쳐줘'라고 던지세요.&#10;- TIP 3: 사소하고 작은 도구부터 만들어 성취감을 느껴보세요.&#10;- 결론: 코딩 실력보다 중요한 것은 '내 머릿속 아이디어'입니다. 오늘 바로 첫 주문서를 건네보세요!">
+          <div class="slide-content">
+            <div class="text-col">
+              <span class="tag tag-lavender">SLIDE 05 · 핵심 요약</span>
+              <h2 class="slide-title">초보자를 위한<br><span class="highlight">3대 성공 꿀팁</span></h2>
+              <p class="slide-subtitle">이 3가지만 기억하면 누구나 실패 없이 성공합니다!</p>
+
+              <div class="tips-container">
+                <div class="tip-card">
+                  <span class="tip-num">TIP 1</span>
+                  <div class="tip-body">
+                    <strong>코드를 억지로 읽지 마세요</strong>
+                    <p>영어가 쏟아져도 신경 쓰지 말고, 화면이 잘 움직이는지만 확인하세요.</p>
+                  </div>
+                </div>
+                <div class="tip-card">
+                  <span class="tip-num">TIP 2</span>
+                  <div class="tip-body">
+                    <strong>에러가 나면 그대로 복사해 던지세요</strong>
+                    <p>빨간 에러 창이 뜨면 <em>"이거 고쳐줘"</em>라고 AI에게 전달하면 끝납니다.</p>
+                  </div>
+                </div>
+                <div class="tip-card">
+                  <span class="tip-num">TIP 3</span>
+                  <div class="tip-body">
+                    <strong>작고 사소한 것부터 시작하세요</strong>
+                    <p>처음엔 거대한 서비스보다 간단한 계산기, 스톱워치부터 만들어보세요.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card conclusion-card">
+                <h3>🌟 "코딩 실력보다 중요한 것은 '내 머릿속 아이디어'입니다."</h3>
+                <p>오늘 바로 AI에게 당신의 첫 번째 주문서를 건네보세요!</p>
+              </div>
+            </div>
+            <div class="visual-col">
+              <div class="image-frame">
+                <img src="images/slide5_success.jpg" alt="황금 열쇠를 들고 엄지를 치켜든 캐릭터" class="clay-img">
+                <div class="img-caption">🔑 당신의 아이디어가 세상을 바꿉니다!</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- 하단 리모컨 및 내비게이션 바 -->
+    <footer class="pres-footer">
+      <button id="prev-btn" class="nav-arrow-btn" aria-label="이전 슬라이드">
+        <span>◀ 이전</span>
+      </button>
+
+      <div class="dots-container" id="dots-container">
+        <button class="dot active" data-index="0" title="1장: 개념 이해"></button>
+        <button class="dot" data-index="1" title="2장: 탄생과 발전"></button>
+        <button class="dot" data-index="2" title="3장: 실전 가이드"></button>
+        <button class="dot" data-index="3" title="4장: 활용 사례"></button>
+        <button class="dot" data-index="4" title="5장: 성공 꿀팁"></button>
+      </div>
+
+      <button id="next-btn" class="nav-arrow-btn next" aria-label="다음 슬라이드">
+        <span>다음 ▶</span>
+      </button>
+    </footer>
+
+    <!-- 키보드 안내 툴팁 -->
+    <div class="keyboard-guide">
+      <span>💡 <strong>◀ ▶ 방향키</strong> / <strong>스페이스바</strong> (이동) · <strong>S</strong> (발표자 노트 팝업) · <strong>F</strong> (전체화면)</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
